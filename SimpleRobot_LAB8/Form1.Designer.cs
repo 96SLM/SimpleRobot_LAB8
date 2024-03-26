@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             pnlBorder = new Panel();
-            ldlBot = new Label();
+            lblBot = new Label();
             lblXYCords = new Label();
             btnNorth = new Button();
             btnGoTen = new Button();
@@ -44,20 +44,23 @@
             // pnlBorder
             // 
             pnlBorder.BackColor = SystemColors.ControlDark;
-            pnlBorder.Controls.Add(ldlBot);
+            pnlBorder.Controls.Add(lblBot);
             pnlBorder.Location = new Point(32, 27);
             pnlBorder.Name = "pnlBorder";
             pnlBorder.Size = new Size(201, 201);
             pnlBorder.TabIndex = 0;
             // 
-            // ldlBot
+            // lblBot
             // 
-            ldlBot.AutoSize = true;
-            ldlBot.Font = new Font("Wingdings", 12F, FontStyle.Regular, GraphicsUnit.Point, 2);
-            ldlBot.Location = new Point(56, 41);
-            ldlBot.Name = "ldlBot";
-            ldlBot.Size = new Size(0, 17);
-            ldlBot.TabIndex = 0;
+            lblBot.AutoSize = true;
+            lblBot.Font = new Font("Wingdings", 5.25F, FontStyle.Regular, GraphicsUnit.Point, 2);
+            lblBot.Location = new Point(90, 90);
+            lblBot.MaximumSize = new Size(10, 10);
+            lblBot.MinimumSize = new Size(10, 10);
+            lblBot.Name = "lblBot";
+            lblBot.Size = new Size(10, 10);
+            lblBot.TabIndex = 0;
+            lblBot.Text = "J";
             // 
             // lblXYCords
             // 
@@ -122,6 +125,7 @@
             btnExit.TabIndex = 7;
             btnExit.Text = "E&xit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // btnSouth
             // 
@@ -149,6 +153,7 @@
             Controls.Add(pnlBorder);
             Name = "frmPlaySpace";
             Text = "Simple Robot";
+            Load += frmPlaySpace_Load;
             pnlBorder.ResumeLayout(false);
             pnlBorder.PerformLayout();
             ResumeLayout(false);
@@ -158,7 +163,7 @@
         #endregion
 
         private Panel pnlBorder;
-        private Label ldlBot;
+        private Label lblBot;
         private Label lblXYCords;
         private Button btnNorth;
         private Button btnGoTen;
