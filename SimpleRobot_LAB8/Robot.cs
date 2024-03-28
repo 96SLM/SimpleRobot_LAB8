@@ -12,19 +12,46 @@ namespace SimpleRobot_LAB8
     //create a property to return robot's current position as a point structure
     //default direction should be north
     //create an event for if the user trys to move byond the edge
-    
+
     internal class Robot
     {
-        public int X {  get; set; }
-        public int Y { get; set; }
+        public bool IsNorth { get; set; }
+        public bool IsSouth { get; set; }
+        public bool IsWest { get; set; }
+        public bool IsEast {  get; set; }
+        public Point RobPoint { get; set; }
 
-       //public static string direction { get; set; }
-
-        public Robot()
+        public Robot(Point p)
         {
-            X = 90;
-            Y = 90;
-            //direction = "North";           
+            RobPoint = p;
+            IsNorth = true;
         }
+       
+        //move action method
+        public void Move(int space)
+        {
+            
+            if (IsNorth == true)
+            {
+                RobPoint = new Point(RobPoint.X, RobPoint.Y - space);
+            }
+            else if (IsSouth == true)
+            {
+                RobPoint = new Point(RobPoint.X, RobPoint.Y + space);
+            }
+            else if (IsWest == true)
+            {
+                RobPoint = new Point(RobPoint.X - space, RobPoint.Y);
+            }
+            else if(IsEast == true)
+            {
+                RobPoint = new Point(RobPoint.X + space, RobPoint.Y);
+            }
+                        
+        }
+
+        //declare event and delegate
+
+
     }
 }

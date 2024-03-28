@@ -80,6 +80,7 @@
             btnNorth.TabIndex = 2;
             btnNorth.Text = "N";
             btnNorth.UseVisualStyleBackColor = true;
+            btnNorth.Click += btnNorth_Click;
             // 
             // btnGoTen
             // 
@@ -89,6 +90,7 @@
             btnGoTen.TabIndex = 3;
             btnGoTen.Text = "&Go 10";
             btnGoTen.UseVisualStyleBackColor = true;
+            btnGoTen.Click += btnGoTen_Click;
             // 
             // btnGoOne
             // 
@@ -98,6 +100,7 @@
             btnGoOne.TabIndex = 4;
             btnGoOne.Text = "Go 1";
             btnGoOne.UseVisualStyleBackColor = true;
+            btnGoOne.Click += btnGoOne_Click;
             // 
             // btnEast
             // 
@@ -107,6 +110,7 @@
             btnEast.TabIndex = 5;
             btnEast.Text = "E";
             btnEast.UseVisualStyleBackColor = true;
+            btnEast.Click += btnEast_Click;
             // 
             // btnWest
             // 
@@ -116,6 +120,7 @@
             btnWest.TabIndex = 6;
             btnWest.Text = "W";
             btnWest.UseVisualStyleBackColor = true;
+            btnWest.Click += btnWest_Click;
             // 
             // btnExit
             // 
@@ -135,6 +140,7 @@
             btnSouth.TabIndex = 8;
             btnSouth.Text = "S";
             btnSouth.UseVisualStyleBackColor = true;
+            btnSouth.Click += btnSouth_Click;
             // 
             // frmPlaySpace
             // 
