@@ -30,7 +30,7 @@ namespace SimpleRobot_LAB8
         //move action method
         public void Move(int space)
         {
-            
+           
             if (IsNorth == true)
             {
                 RobPoint = new Point(RobPoint.X, RobPoint.Y - space);

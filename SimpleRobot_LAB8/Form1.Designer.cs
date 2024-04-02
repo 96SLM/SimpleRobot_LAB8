@@ -47,14 +47,14 @@
             pnlBorder.Controls.Add(lblBot);
             pnlBorder.Location = new Point(32, 27);
             pnlBorder.Name = "pnlBorder";
-            pnlBorder.Size = new Size(201, 201);
+            pnlBorder.Size = new Size(207, 207);
             pnlBorder.TabIndex = 0;
             // 
             // lblBot
             // 
             lblBot.AutoSize = true;
             lblBot.Font = new Font("Wingdings", 5.25F, FontStyle.Regular, GraphicsUnit.Point, 2);
-            lblBot.Location = new Point(90, 90);
+            lblBot.Location = new Point(98, 100);
             lblBot.MaximumSize = new Size(10, 10);
             lblBot.MinimumSize = new Size(10, 10);
             lblBot.Name = "lblBot";
@@ -66,7 +66,7 @@
             // 
             lblXYCords.AutoSize = true;
             lblXYCords.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblXYCords.Location = new Point(32, 9);
+            lblXYCords.Location = new Point(42, 9);
             lblXYCords.Name = "lblXYCords";
             lblXYCords.Size = new Size(65, 15);
             lblXYCords.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             // btnNorth
             // 
-            btnNorth.Location = new Point(121, 235);
+            btnNorth.Location = new Point(121, 245);
             btnNorth.Name = "btnNorth";
             btnNorth.Size = new Size(23, 23);
             btnNorth.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             // btnGoTen
             // 
-            btnGoTen.Location = new Point(179, 261);
+            btnGoTen.Location = new Point(179, 271);
             btnGoTen.Name = "btnGoTen";
             btnGoTen.Size = new Size(54, 23);
             btnGoTen.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             // btnGoOne
             // 
-            btnGoOne.Location = new Point(32, 261);
+            btnGoOne.Location = new Point(32, 271);
             btnGoOne.Name = "btnGoOne";
             btnGoOne.Size = new Size(55, 23);
             btnGoOne.TabIndex = 4;
@@ -104,7 +104,7 @@
             // 
             // btnEast
             // 
-            btnEast.Location = new Point(150, 261);
+            btnEast.Location = new Point(150, 271);
             btnEast.Name = "btnEast";
             btnEast.Size = new Size(23, 23);
             btnEast.TabIndex = 5;
@@ -114,7 +114,7 @@
             // 
             // btnWest
             // 
-            btnWest.Location = new Point(93, 261);
+            btnWest.Location = new Point(93, 271);
             btnWest.Name = "btnWest";
             btnWest.Size = new Size(23, 23);
             btnWest.TabIndex = 6;
@@ -134,7 +134,7 @@
             // 
             // btnSouth
             // 
-            btnSouth.Location = new Point(121, 285);
+            btnSouth.Location = new Point(121, 295);
             btnSouth.Name = "btnSouth";
             btnSouth.Size = new Size(23, 23);
             btnSouth.TabIndex = 8;

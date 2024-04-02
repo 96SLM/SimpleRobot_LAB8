@@ -15,8 +15,8 @@ namespace SimpleRobot_LAB8
         {
             rob = new Robot(lblBot.Location);
 
-            lblXYCords.Text = "{X = " + (rob.RobPoint.X - 90) + 
-                ", Y = " + (rob.RobPoint.Y - 90) + "}";
+            lblXYCords.Text = "{X = " + (rob.RobPoint.X - 100+2) + 
+                ", Y = " + (rob.RobPoint.Y - 100) + "}";
             lblBot.Text = char.ConvertFromUtf32(233);
             //wires the event handler to the delagate in load
 
@@ -28,8 +28,8 @@ namespace SimpleRobot_LAB8
             lblBot.Location = rob.RobPoint;
             lblBot.Update();
 
-            lblXYCords.Text = "{X = " + (rob.RobPoint.X - 90) +"," +
-                " Y = " + (rob.RobPoint.Y - 90)+"}";
+            lblXYCords.Text = "{X = " + (rob.RobPoint.X - 100+2) +"," +
+                " Y = " + ((rob.RobPoint.Y - 100)*-1)+"}";
             lblXYCords.Update();
         }
 
